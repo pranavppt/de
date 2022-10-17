@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Montserrat&family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    justify-content: cneter;
+    box-sizing: border-box;
+}
+
+/* html{
+    font-size: 62.5%;
+} */
+
+header {
+    position: fixed;
+    width: 95%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #0a2145;
+    color: white;
+}
+
+i {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+li,
+a {
+    text-decoration: none;
+    font-family: "Ubuntu";
+    font-weight: 500;
+    font-size: 1.2rem;
+    list-style: none;
+    font-weight: bolder;
+    color: #2ea730;
+}
+
+nav {
+    display: flex;
+
+}
+
+ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    padding: 0rem;
+
+}
+
+#main a {
+    background-color: #2ea730;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+    margin-left: 0px;
+}
+
+#search {
+    color: white;
+
+}
+
+.mobileNavbar {
+    display: none;
+    /* background: transparent; */
+    cursor: pointer;
+}
+
+.mobileNavIcon[name="close"] {
+    display: none;
+}
+
+@media(max-width:600px) {
+    .mobileNavbar {
+        display: block;
+    }
+
+    header #search {
+        align-items: stretch;
+    }
+
+    nav, .navLink {
+        display: none;
+        width: 95%;
+        height: 100vh;
+        background-color: #0a2145;
+        position: absolute;
+        margin: 0%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100vw);
+        transition: all 0.5s linear;
+    }
+
+    div {
+        width: 20px;
+    }
+
+    header {
+        margin-top: 0.8rem;
+        margin-left: 0.8rem;
+        padding: 0.8rem;
+        border-radius: 1rem;
+    }
+
+    i {
+        font-size: 1rem;
+        margin-left: 1rem;
+        /* letter-spacing: 2px; */
+        /* font-weight: 300;*/
+    }
+
+
+}
+
+
+@media(max-width:1000px) {
+    .mobileNavbar {
+        display: block;
+        margin-right: 1rem;
+    }
+
+    #search {
+        display: none;
+    }
+
+    /* nav {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        margin: 0%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100vw);
+        transition: all 0.5s linear;
+        background-color: #0a2145;
+    } */
+    
+    nav , .navLink {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        margin: 0%;
+        top: 0%;
+        left: 0%;
+        right: 0%;
+        bottom: 0%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100vw);
+        transition: all 0.5s linear;
+        background-color: #0a2145;  
+        border-radius: 1rem;
+    }
+
+
+    /* div {
+        width: 20px;
+    } */
+
+
+}
