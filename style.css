@@ -74,7 +74,21 @@ a {
 .nav__logo img {
     width: 2rem;
     height: 2rem;
+    margin-left: 1rem;
     color: var(--first-color);
+}
+
+.nav__menu{
+    display: none;
+}
+
+.nav__button{
+    /* font-size: var(--h2-font-size); */
+    margin-right: 1rem;
+    color: #fff;
+    background-color:var(--second-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
 }
 
 @media screen and (min-width:1023px) {
@@ -83,7 +97,7 @@ a {
     }
 
     .nav__logo {
-        margin-left: 3rem;
+        margin-left: 2rem;
         font-size: var(--h1-font-size);
         
     }
@@ -111,4 +125,8 @@ a {
         padding: 0.5rem;
         border-radius: 0.5rem;
     }
+    .nav__menu{
+        display: block;
+    }
+    
 }
