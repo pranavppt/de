@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>E-Learner</title>
 </head>
+
 <body>
     <header class="header" id="header">
         <nav class="nav container">
             <a href="" class="nav__logo">
-                <img src="./images/education.png" alt="">E-Learner 
+                <img src="./images/education.png" alt="">E-Learner
             </a>
-            <div class="nav__menu">
+            <div class="nav__menu change" id="nav__menu">
                 <ul class="nav__list">
                     <li class="nav__item">
                         <a href="" class="nav__link">Courses</a>
@@ -34,14 +37,13 @@
                 <a href="#" class="button nav__button">
                     Sign Up
                 </a>
-                <div id="menu">
-                    <div id="bar1" class="bar"></div>
-                    <div id="bar2" class="bar"></div>
-                    <div id="bar3" class="bar"></div>
+                <div onclick="onClick()" id="menu">
+                    <i class='bx bx-menu'></i>
                 </div>
             </div>
         </nav>
     </header>
     <script src="script.js"></script>
 </body>
+
 </html>

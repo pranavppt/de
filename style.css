@@ -78,10 +78,6 @@ a {
     color: var(--first-color);
 }
 
-.nav__menu {
-    display: none;
-}
-
 .nav__button {
     /* font-size: var(--h2-font-size); */
     color: #fff;
@@ -90,31 +86,43 @@ a {
     border-radius: 0.5rem;
 }
 
-.ham {
-    margin-right: 1rem;
-    display: flex;
-    column-gap: 1rem;
-    justify-content: space-evenly;
+#menu i{
+    font-size: 2rem;
+}
+.ham{
+    display: inline-flex;
+    column-gap: 0.5rem;
+    margin-right: 0.5rem;
+    
 }
 
-#menu {
-    display: flex;
-    height: 2rem;
-    width: 2rem;
-    cursor: pointer;
-    justify-content: space-around;
-    flex-direction: column;
+@media screen and (max-width:1022px) {
+    .nav__menu {
+        bottom: 1rem;
+        position: absolute;
+        /* left: 0; */
+        right: 0;
+        top: 3.5rem;
+        height: 100vh;
+        width: 20%;   
+    }
+    .nav__menu li a:hover{
+        border: 1px solid #000;
+    }
+    .nav__menu li{
+        padding: 1rem 0;
+    }
+    .nav__menu li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .change{
+        background-color: var(--second-color);
+    }
 }
-
-.bar {
-    height: 0.3rem;
-    width: 100%;
-    background-color: #fff;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
+.list{
+    display: none;
 }
-
 @media screen and (min-width:1023px) {
     .nav {
         height: calc(var(--header-height) + 1rem);
@@ -153,7 +161,7 @@ a {
     }
 
     .nav__menu {
-        display: block;
+        display: inline-flex;
     }
 
     #menu {
