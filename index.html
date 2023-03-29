@@ -27,14 +27,14 @@
                     <li class="nav__item">
                         <a href="" class="nav__link">Test</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="" class="nav__link">Sign In</a>
+                    <li class="nav__item" >
+                        <a class="nav__link" onclick="javascript:loginToggle()">Sign In</a>   
                     </li>
                 </ul>
             </div>
             <div class="ham">
 
-                <a href="#" class="button nav__button">
+                <a class="button nav__button" onclick="javascript:signupToggle()">
                     Sign Up
                 </a>
                 <div onclick="onClick()" id="menu">
@@ -48,6 +48,35 @@
             </div>
         </nav>
     </header>
+    <div class="signup-form">
+        <div class="form">
+            <div class="close" onclick="signupToggle()">&times;</div>
+            <div class="text">
+                <h1>Registration Form</h1>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email ID">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+    <div class="login-form">
+        <div class="form">
+            <div class="close" onclick="loginToggle()">&times;</div>
+            <div class="text">
+                <h1>Login</h1>
+            </div>
+            <form action="#">
+                <input type="email" placeholder="Email ID">
+                <input type="password" placeholder="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
