@@ -206,7 +206,6 @@ a {
         width: 50%;
     }
 }
-
 @media screen and (min-width:1023px) {
     .nav {
         height: calc(var(--header-height) + 1rem);
