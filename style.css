@@ -155,57 +155,76 @@ a {
     /* border: 0.5rem solid var(--second-color); */
 }
 
-.form{
+.form {
     width: 500px;
-    padding: 20px 30px;
+    padding: 1rem 1.5rem;
 }
 
-.form .close{
+.form .close {
     text-align: right;
-    cursor: pointer;
     font-size: 2rem;
 }
 
-.form .text h1{
-    text-align: center;
-    margin: 30px 0;
+.form .close i {
+    cursor: pointer;
 }
 
-.form form{
+.form .text h1 {
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+.form form {
     display: block;
     margin: auto;
 }
 
-.form form input{
+.form form input {
     width: 100%;
     display: block;
     border: 1px solid var(--second-color);
-    border-radius: 50px;
-    padding: 20px 16px;
-    margin: 20px auto;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    margin: 1rem auto;
     outline: none;
+    font-size: larger;
 }
+
 .signup-form.active,
-.login-form.active{
+.login-form.active {
     top: 50%;
     transition: .5s;
     visibility: visible;
     border: 0.3rem solid var(--second-color);
 }
+
 .list {
     display: none;
     transition: all 0.5s ease-in-out;
 }
-.header.active{
+
+.header.active {
     filter: blur(.5rem);
     transition: .5s;
     pointer-events: none;
 }
+
 @media screen and (max-width:450px) {
     .nav__menu {
         width: 50%;
     }
 }
+@media screen and (max-width:550px) {
+    .form{
+        width: calc(100vw - 50px);
+    }
+    .form form input {
+        padding: 1rem 1rem;
+        margin: 1rem auto;
+        font-size: large;
+    }
+}
+
 @media screen and (min-width:1023px) {
     .nav {
         height: calc(var(--header-height) + 1rem);
